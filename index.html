@@ -4,11 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Welcome</h1>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="blog">Blog</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="content">
+        <!-- Default Home Page -->
+        <section class="hero">
+            <h1>Welcome to My Website</h1>
+            <p>This is a responsive single-page website.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
